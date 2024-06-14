@@ -22,3 +22,6 @@ if [[ ":$PATH:" != *":/usr/local/bin/go/bin:"* ]]; then
     echo 'export PATH="/usr/local/bin/go/bin:$PATH"' >> ~/.bashrc
     source ~/.bashrc
 fi
+
+# Reload the .bashrc file to apply the changes
+source ~/.bashrc
