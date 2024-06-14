@@ -5,6 +5,9 @@
 
 GO_VER=1.22.4
 
+# Create ~/Downloads directory if it does not exist
+mkdir -p ~/Downloads
+
 # Remove any existing Go installation files in the Downloads directory
 rm -rf ~/Downloads/go*.linux-amd64.tar.gz
 
