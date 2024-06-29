@@ -20,9 +20,9 @@ sudo rm -rf /usr/local/go
 # Extract the downloaded Go tarball to /usr/local directory
 sudo tar -C /usr/local -xzf ~/Downloads/go$GO_VER.linux-amd64.tar.gz
 
-# Add /usr/local/bin/go/bin/go to PATH if it does not exist
-if [[ ":$PATH:" != *":/usr/local/bin/go/bin:"* ]]; then
-    echo 'export PATH="/usr/local/bin/go/bin:$PATH"' >> ~/.bashrc
+# Add /usr/local/go/bin to PATH if it does not exist
+if [[ ":$PATH:" != *":/usr/local/go/bin:"* ]]; then
+    echo 'export PATH="/usr/local/go/bin:$PATH"' >> ~/.bashrc
     source ~/.bashrc
 fi
 
